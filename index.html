@@ -1,122 +1,126 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>FB777 Information & Access Guide</title>
-  <meta name="description" content="Explore the FB777 information and access guide. Review website details, safe browsing tips, and frequently asked questions.">
+  <title>Beyond Applications | Information & Access Guide</title>
+  <meta name="description" content="Find useful information about Beyond Applications, website access, application services, online safety, and frequently asked questions.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1e293b">
 
   <style>
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      padding: 21px 24px;
-      min-height: 100vh;
-      background: #0f172a;
+      padding: 30px 25px 20px;
+      background: #1e293b;
       color: #f8fafc;
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.65;
+      font-size: 14px;
+      line-height: 1.7;
     }
 
     .container {
       width: 100%;
-      max-width: 920px;
+      max-width: 1000px;
       margin: 0 auto;
-      padding: 32px;
-      background: #1e293b;
-      border: 1px solid #334155;
-      border-radius: 13px;
-      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
     }
 
-    .badge-wrap {
+    .hero {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     .badge {
       display: inline-block;
       padding: 5px 13px;
-      color: #34d399;
-      background: #065f46;
+      margin-bottom: 12px;
       border-radius: 25px;
-      font-size: 14px;
-      font-weight: 700;
+      background: #065f46;
+      color: #34d399;
+      font-size: 13px;
+      font-weight: bold;
     }
 
     h1 {
-      margin: 0 0 12px;
-      text-align: center;
-      font-size: clamp(23px, 4vw, 30px);
-      line-height: 1.35;
-      letter-spacing: -0.5px;
+      margin: 5px 0 12px;
+      color: #f8fafc;
+      font-size: 30px;
+      line-height: 1.3;
     }
 
     .intro {
-      max-width: 700px;
-      margin: 0 auto 25px;
-      text-align: center;
-      color: #94a3b8;
+      margin: 0;
+      color: #94b4dd;
       font-size: 16px;
     }
 
-    .domain-box {
-      margin: 24px 0 27px;
-      padding: 16px;
-      text-align: center;
-      background: #0f172a;
+    .website-box {
+      margin: 25px 0 26px;
+      padding: 16px 15px;
       border: 1px dashed #475569;
-      border-radius: 9px;
+      border-radius: 10px;
+      background: #0f172a;
+      text-align: center;
     }
 
-    .domain-label {
-      display: block;
-      margin-bottom: 2px;
-      color: #94a3b8;
+    .website-label {
+      color: #94b4dd;
       font-size: 13px;
-      text-transform: uppercase;
     }
 
-    .domain-link {
-      color: #22c5fd;
+    .website-box h2 {
+      margin: 2px 0 0;
+      color: #22d3ee;
       font-size: 18px;
-      font-weight: 700;
-      text-decoration: none;
-      overflow-wrap: anywhere;
     }
 
-    .button {
+    .website-box a {
+      color: #22d3ee;
+      text-decoration: none;
+    }
+
+    .website-box a:hover {
+      text-decoration: underline;
+    }
+
+    .main-button {
       display: block;
       width: 100%;
-      padding: 13px 18px;
-      text-align: center;
-      background: #2563eb;
-      color: white;
-      font-size: 15px;
-      font-weight: 700;
-      text-decoration: none;
+      padding: 13px 16px;
       border-radius: 8px;
+      background: #2864e8;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
       transition: background 0.2s ease;
     }
 
-    .button:hover {
+    .main-button:hover {
       background: #1d4ed8;
     }
 
-    .divider {
-      height: 1px;
-      margin: 28px 0 20px;
-      background: #334155;
+    hr {
+      margin: 28px 0 18px;
       border: 0;
+      border-top: 1px solid #334155;
     }
 
-    h2 {
-      margin: 0 0 12px;
+    .faq h2 {
+      margin: 0 0 13px;
       font-size: 17px;
+      color: #f8fafc;
     }
 
     .faq-item {
@@ -124,47 +128,48 @@
     }
 
     .question {
-      display: block;
-      margin-bottom: 3px;
-      color: #22c5fd;
-      font-size: 14px;
-      font-weight: 700;
+      margin: 0 0 3px;
+      color: #22d3ee;
+      font-weight: bold;
     }
 
     .answer {
       margin: 0;
-      color: #94a3b8;
-      font-size: 13.5px;
-      line-height: 1.65;
+      color: #94b4dd;
+      overflow-wrap: anywhere;
     }
 
     footer {
-      margin-top: 24px;
+      margin-top: 25px;
       text-align: center;
-      color: #64748b;
+      color: #7189ad;
       font-size: 12px;
     }
 
+    footer p {
+      margin: 8px 0;
+    }
+
     footer a {
-      color: #22c5fd;
+      color: #22d3ee;
       text-decoration: none;
     }
 
     @media (max-width: 600px) {
       body {
-        padding: 12px;
+        padding: 24px 16px 18px;
       }
 
-      .container {
-        padding: 23px 18px;
+      h1 {
+        font-size: 25px;
       }
 
       .intro {
         font-size: 14px;
       }
 
-      .domain-link {
-        font-size: 16px;
+      .website-box h2 {
+        font-size: 17px;
       }
     }
   </style>
@@ -173,87 +178,88 @@
 <body>
   <main class="container">
 
-    <div class="badge-wrap">
-      <span class="badge">✓ FB777 Information Portal</span>
-    </div>
+    <header class="hero">
+      <div class="badge">✓ Beyond Applications Information Portal</div>
 
-    <h1>FB777 Information &amp; Access Guide</h1>
+      <h1>Beyond Applications Information &amp; Access Guide</h1>
 
-    <p class="intro">
-      Find useful information about FB777, website access,
-      account safety, and common questions. Always verify the
-      website address before entering personal information.
-    </p>
+      <p class="intro">
+        Find useful information about Beyond Applications, digital services,
+        application resources, and common questions.
+        <br>
+        Always verify website addresses before sharing personal information.
+      </p>
+    </header>
 
-    <section class="domain-box">
-      <span class="domain-label">Website Information</span>
-      <a class="domain-link"
-         href="https://davidph134.github.io/fb777-official/">
-        FB777 Official Website Guide
-      </a>
+    <section class="website-box" id="website-information">
+      <div class="website-label">WEBSITE INFORMATION</div>
+      <h2>
+        <a href="https://beyondapplication.github.io/beyondapplications-official/">
+          Beyond Applications Official Website Guide
+        </a>
+      </h2>
     </section>
 
-    <a class="button"
-       href="https://davidph134.github.io/fb777-official/">
-      Visit FB777 Information Page
+    <a class="main-button" href="#faq">
+      Visit Beyond Applications Information Page
     </a>
 
-    <hr class="divider">
+    <hr>
 
-    <section aria-labelledby="faq-heading">
-      <h2 id="faq-heading">Frequently Asked Questions (FAQ)</h2>
+    <section class="faq" id="faq">
+      <h2>Frequently Asked Questions (FAQ)</h2>
 
-      <div class="faq-item">
-        <span class="question">
-          Q: What is FB777?
-        </span>
+      <article class="faq-item">
+        <p class="question">Q: What is Beyond Applications?</p>
         <p class="answer">
-          A: FB777 is the name users may encounter when searching
-          for an online platform. Confirm the identity and terms
-          of any service through its independently verified sources.
+          A: Beyond Applications is the name associated with this information
+          page. Visit its verified website to learn about the organization,
+          its services, and available resources.
         </p>
-      </div>
+      </article>
 
-      <div class="faq-item">
-        <span class="question">
-          Q: How can I check whether a website is safe?
-        </span>
+      <article class="faq-item">
+        <p class="question">Q: Where can I find information about its services?</p>
         <p class="answer">
-          A: Check the complete domain carefully, look for HTTPS,
-          review the site's privacy policy and terms, and avoid
+          A: Review the official website and its published service pages
+          for accurate details about applications, digital solutions,
+          available resources, and support.
+        </p>
+      </article>
+
+      <article class="faq-item">
+        <p class="question">Q: How can I check whether a website is safe?</p>
+        <p class="answer">
+          A: Check the complete domain carefully, look for HTTPS, review
+          the privacy policy and terms, and avoid suspicious links.
+          HTTPS alone does not guarantee that a website is legitimate.
+        </p>
+      </article>
+
+      <article class="faq-item">
+        <p class="question">Q: How can I find the correct website address?</p>
+        <p class="answer">
+          A: Confirm the domain through independently verifiable sources
+          before sharing information. Avoid unofficial mirror pages and
           unexpected links requesting passwords or payment details.
-          HTTPS alone does not prove a website is legitimate.
         </p>
-      </div>
+      </article>
 
-      <div class="faq-item">
-        <span class="question">
-          Q: How can I find the correct website address?
-        </span>
+      <article class="faq-item">
+        <p class="question">Q: What should I do if I find a suspicious website?</p>
         <p class="answer">
-          A: Check independently verifiable sources and confirm
-          the domain before signing in. Do not rely solely on
-          search advertisements or unofficial mirror pages.
+          A: Do not enter sensitive information. Close the page and verify
+          the website through a trusted source before proceeding.
         </p>
-      </div>
-
-      <div class="faq-item">
-        <span class="question">
-          Q: What should I do if I find a suspicious website?
-        </span>
-        <p class="answer">
-          A: Do not enter your credentials or payment information.
-          Close the page and verify the service through a trusted
-          source before proceeding.
-        </p>
-      </div>
+      </article>
     </section>
 
     <footer>
       <p>
-        FB777 Information Guide · Website information and safe
-        browsing resources.
+        Beyond Applications Information Guide · Website information
+        and safe browsing resources.
       </p>
+
       <p>
         Hosted on
         <a href="https://pages.github.com/">GitHub Pages</a>.
